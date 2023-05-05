@@ -31,7 +31,7 @@ $(function () {
     currentHour = parseInt(currentHour);
     blockHour = parseInt(blockHour);
     
-    // currentHour += 12;  // for test purpose
+    currentHour += 12;  // for test purpose
 
     // clear all color-coding classes
     $(this).removeClass('future')
