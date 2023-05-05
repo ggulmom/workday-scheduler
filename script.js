@@ -13,28 +13,39 @@ $(function () {
     
     var textValue = $(this).siblings('.description').val();
     var timeIndex = $(this).parent().attr('id')
-    console.log(timeIndex);
+
+    // save
+
   } );
-
-  getHeaderDate();
-
 
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
-  //
+
+  currentHour = dayjs().format("HH");
+
+  $(".time-block").each( function () {
+      var blockHour = $(this).attr('id').split('-')[1];
+
+      if( currentHour < blockHour ) {
+
+      }
+
+  } );
+
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
+  getHeaderDate();
 });
 
 
 function getHeaderDate() {
-  var currentHeaderDate = moment().format('dddd, MMMM Do');
+  var currentHeaderDate = dayjs().format('dddd, MMMM Do');
   $("#currentDay").text(currentHeaderDate);
 }
 
