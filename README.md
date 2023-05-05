@@ -2,7 +2,7 @@
 
 This Application allows user to enter event, save the event. The saved data persists even after the page is refreshed.
 
-[Click Here to Luanch the App](https://ggulmom.github.io/workday-scheduler/)
+[Click Here to Launch the App](https://ggulmom.github.io/workday-scheduler/)
 
 
 ## Usage
